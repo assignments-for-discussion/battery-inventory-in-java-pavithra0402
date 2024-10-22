@@ -12,6 +12,10 @@ public class Main {
     int ratedCapacity = 120;  // Rated capacity for all batteries
 
     for (int presentCapacity : presentCapacities) {
+      if (capacity <= 0 || capacity > ratedCapacity) {
+            continue;
+            // Skip invalid capacity values
+      }
       double soh = (100.0 * presentCapacity) / ratedCapacity;  // Calculate SoH percentage
 
       if (soh > 83) {
