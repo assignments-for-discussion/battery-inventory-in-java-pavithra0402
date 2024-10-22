@@ -40,11 +40,6 @@ public class Main {
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
     System.out.println("Done counting :)\n");
-
-    //printing the count of each battery
-    System.out.println("Healthy batteries: "+counts.healthy);
-    System.out.println("Batteries for exchange:" +counts.exchange);
-    System.out.println("Failed batteries:" +counts.failed);
   }
 
   public static void main(String[] args) {
