@@ -14,7 +14,7 @@ public class Main {
     for (int presentCapacity : presentCapacities) {
       
       // Skiping invalid capacity values i.e if it is less than 0 or greater than rated capacity.
-      if (capacity <= 0 || capacity > ratedCapacity) {
+      if (presentCapacity <= 0 || presentCapacity > ratedCapacity) {
             continue;
       }
       double soh = (100.0 * presentCapacity) / ratedCapacity;  // Calculate SoH percentage
